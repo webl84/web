@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('fonts/FiraMono-Regular.eot');
+    src: url('fonts/FiraMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FiraMono-Regular.woff2') format('woff2'),
+        url('fonts/FiraMono-Regular.woff') format('woff'),
+        url('fonts/FiraMono-Regular.ttf') format('truetype'),
+        url('fonts/FiraMono-Regular.svg#FiraMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraMono-Bold';
+    src: url('fonts/FiraMono-Bold.eot');
+    src: url('fonts/FiraMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FiraMono-Bold.woff2') format('woff2'),
+        url('fonts/FiraMono-Bold.woff') format('woff'),
+        url('fonts/FiraMono-Bold.ttf') format('truetype'),
+        url('fonts/FiraMono-Bold.svg#FiraMono-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+body{
+    background: url(image/bg-home.jpg); 
+    background-size: 100%; 
+    font-family: 'Fira Mono';
+}
+
+h1,h2,h3,h4,h5,h6{ 
+	font-family: 'FiraMono-Bold'; 
+    font-size: 30px;
+}
+img{
+    max-width: 100%;
+    width: 100%
+}
+/*-----------------HEADER-------------------------*/
+header{
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 25px;
+}
+
+.col-center img{
+    height: 130px
+}
+
+/*-----------------SECTION-1-------------------------*/
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    width:100%; 
+    padding:0px 80px;
+    box-sizing: border-box;
+    display: flex;
+} 
+.cont-left{
+    width: 36%;/* border: solid;  */
+    background: #fff; 
+    margin: 0px 2%; 
+    position: relative;
+    height: 400px
+} 
+.cont-left:before{
+    content: ""; 
+    position: absolute; 
+    width: 482px;
+    height: 717px;
+    background: url(image/left.png);
+    background-size: 100%;
+    z-index: -1;
+    left: -41px; 
+    background-repeat: no-repeat
+}
+.cont-left-box{
+    display: flex;
+    padding: 30px;
+}
+.cont-left-box .text{
+    width: 20%; 
+    position: relative;
+} 
+.cont-left-box .text strong{
+    position: absolute;
+    transform: rotate(
+-90deg);
+    width: 300px;
+    height: 100px;
+    left: -88px;
+    font-size: 23px;
+    top: 26px;
+}
+
+.cont-left-box .img{
+    width: 80%; 
+    position: relative
+} 
+
+.cont-left-box .img:before{
+    content: "";
+    position: absolute;
+    background: url(image/img-home.jpg); 
+    width: 360px;
+    height: 303px; 
+    background-size: 100%;
+    left: 0px; 
+    z-index: 10; 
+    background-repeat: no-repeat;
+    top: 30px
+
+}
+
+
+.cont-right{
+    width: 56%; 
+    margin: 0px 2%; 
+    background: #fff; 
+    position: relative; 
+    padding: 25px; 
+    box-sizing: border-box;
+  /*  border: solid; */
+  height:auto; 
+  padding-bottom:  130px;
+} 
+
+.cont-right:before{
+    content: ""; 
+    position: absolute; 
+    width: 735px;
+    height: 560px;
+    background: url(image/right.png);
+    background-size: 100%;
+    z-index: -1 !important;
+    right: -38px; 
+    top: -19px; 
+    background-repeat: no-repeat
+} 
+
+.cont-right:after{
+    content: "";
+    position: absolute; 
+    width: 80px;
+    height: 90px; 
+    background: url(image/circulo.png); 
+    background-size: 100%; 
+    bottom: 10px; 
+    right:38px; 
+    background-repeat:no-repeat;
+}
+.number{
+    width: 90%; 
+    position: relative; 
+    margin-bottom: 50px;
+   /* border: solid*/
+} 
+.number:before{
+    content: ""; 
+    position: absolute; 
+    width: 130px;  
+    height:20px; 
+    background: #83b601; 
+    right: 0px
+} 
+.title h1{
+    font-size: 30px; 
+} 
+ 
+.title{
+    padding-left: 50px
+} 
+
+.text{
+    padding-left: 50px; 
+    line-height: 24px;
+    padding-top: 45px
+}
+
+.title h1 strong{
+  display: flex; 
+  padding-left: 100px; 
+  position: relative; 
+  font-family: 'Fira Mono'; 
+  font-weight: normal;
+align-items: center 
+} 
+
+.title strong:before{
+    content: ""; 
+    position: absolute; 
+    width: 90px; 
+    height: 5px;
+    background: #83b601;
+    left: 0px
+} 
+.t-text{
+    position: absolute; 
+    bottom:45px;
+    padding-left:50px
+}
+
+/*-----services--------*/
+.section-home-services{
+    height: 500px;
+    padding: 50px 0px;  
+    margin-top: 50px; 
+    display: flex;
+    background: red
+} 
+
+.title h2 strong{
+    display: flex;
+    padding-left: 100px;
+    position: relative;
+    font-family: 'Fira Mono';
+    font-weight: normal;
+    align-items: center; 
+    font-size: 20px;
+} 
+.cont-services-title .number{
+    margin-bottom: 10px;
+} 
+.cont-box-services{
+    display:flex; 
+    justify-content: space-between; 
+    height: auto; 
+    width: 100%;;
+    border: solid
+} 
+
+.section-home-services .container{
+  flex-direction: column
+} 
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+} 
+.cont-box{
+    display: flex !important; 
+    align-items: center;
+} 
+
+.slick-dots li button {
+    background: #000 !important; 
+    border-radius: 50%;
+}
